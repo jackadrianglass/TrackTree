@@ -2660,6 +2660,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "mockups"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "slint",
+ "slint-build",
+]
+
+[[package]]
 name = "moxcms"
 version = "0.7.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4055,15 +4064,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "spin_on",
-]
-
-[[package]]
-name = "slint-rust-template"
-version = "0.1.0"
-dependencies = [
- "rand",
- "slint",
- "slint-build",
 ]
 
 [[package]]
