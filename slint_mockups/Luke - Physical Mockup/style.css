@@ -1,0 +1,153 @@
+body {
+    margin: 0px; 
+}
+
+img {
+    width: 30vw; 
+}
+
+header {
+    text-align: center;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+header div h1 {
+    font-size: 50px;
+    margin: 0px;
+    padding: 25px;
+    align-items: center;
+    color: black; 
+    -webkit-text-stroke-width: 1px; /* Width of the outline */
+    -webkit-text-stroke-color: rgba(255, 0, 238, 0.726);
+    
+}
+
+header div {
+    background-color: grey;
+    width: auto;
+    border-radius: 25px;
+    animation-name: reveal;
+    animation-duration: 4s;
+}
+
+main {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    animation-name: grow;
+    animation-duration: 6s;
+}
+
+.lower-highlight {
+  box-shadow: 0px 5px 20px 2px rgba(255, 0, 238, 0.726);
+}
+
+.upper-highlight {
+  box-shadow: 0px -5px 20px 2px rgba(255, 0, 238, 0.726);
+}
+
+.instruments-box {
+    display: grid; 
+    grid-template-columns: repeat(20, 5vw);
+    grid-template-rows: repeat(20, 5vw);
+    aspect-ratio: 1 / 1;
+    width: 100vw; 
+    grid-column: 1/1; 
+    grid-row: 1/1; 
+        justify-self: center; /* horizontal */
+    align-self: center;   /* vertical */
+}
+
+.i-speaker1 {
+    transform: rotateY(180deg);
+    grid-row: 1/2;
+    grid-column: 6/9;
+}
+
+.i-speaker2 {
+    grid-row: 1/2;
+    grid-column: 10/13;
+}
+
+.i-bass {
+    grid-row: 10/12;
+    grid-column: 1/4;
+}
+
+.i-guitar {
+    transform: rotateY(180deg);
+    grid-row: 10/12;
+    grid-column: 14/16;
+}
+
+.i-drums {
+    grid-row: 5/8;
+    grid-column: 14/16;
+}
+
+.i-mic {
+    grid-row: 16/18;
+    grid-column: 8/11;
+}
+
+.i-piano {
+    transform: rotateY(180deg);
+    grid-row: 5/8;
+    grid-column: 4/8;
+}
+
+.centre-circle {
+    background-color: grey;
+    z-index: -1;
+    aspect-ratio: 1 / 1;
+    width: 80vw; 
+    border-radius: 50%;
+    box-shadow: 0 0 100px 0px rgb(0, 0, 0); 
+    grid-column: 1/1; 
+    grid-row: 1/1; 
+    justify-self: center; /* horizontal */
+    align-self: center;   /* vertical */
+}
+
+footer p {
+    margin: 0px; 
+    animation-name: reveal;
+    animation-duration: 4s;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    background-color: black;
+    color: white; 
+    padding: 10px;
+    animation-name: zoom;
+    animation-duration: 4s;
+}
+
+/* @keyframes zoom {
+    from {transform: scale(30);}
+    to {transform: scale(1);}
+} 
+
+
+@keyframes reveal {
+    0% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes grow {
+    0% {transform: scale(0.05);}
+    75% {transform: scale(0.05);}
+    100% {transform: scale(1);}
+} */
